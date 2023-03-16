@@ -1,0 +1,34 @@
+GPU: [4,5]
+DATASET: 'mvtec'
+SUBSET: 'bottle'
+DATA_ROOT: '/home/yzy/MVTec'
+SAVE_PATH: './checkpoints/'
+LOG_PATH: './logs/'
+WRITE_PATH: './writer/'
+VIS_TRAIN: './visualizations/train/'
+VIS_TEST: './visualizations/test/'
+VIS_ERROR: './visualizations/error_map/'
+SEED: 10
+
+
+EPOCHS: 100
+LOG_INTERVAL: 10
+CKPT_INTERVAL: 1
+EVAL_INTERVAL: 1
+VIS_INTERVAL: 10
+CLS_NUM: 15
+
+LR: 0.0001
+D2G_LR: 0.1
+BETA1: 0.0
+BETA2: 0.9
+INPUT_CHANNELS: 3
+IMAGE_SIZE: 512
+BATCH_SIZE: 4
+NUM_WORKER: 4
+ANOMALY_NUM: 50
+
+REC_LOSS_WEIGHT: 1
+FM_LOSS_WEIGHT: 0
+ADV_LOSS_WEIGHT: 0.01
+SCALES: [4, 8, 16]
